@@ -41,7 +41,7 @@ Enable `experimentalDecorators` property in `tsconfig.json`
 
 #### Browser
 
-Current build targets modern browsers that supports ESModules (see the [browserlist](https://github.com/babel/babel/blob/master/packages/babel-compat-data/data/native-modules.json)), so you will need to polyfill required **ES2015** features like `Map` and `WeakMap` and transpile unsupported syntax like **classes** or **arrow functions**.
+Current build targets modern browsers that support ESModules (see the [browserlist](https://github.com/babel/babel/blob/master/packages/babel-compat-data/data/native-modules.json)), so you will need to polyfill required **ES2015** features like `Map` and `WeakMap` and transpile unsupported syntax like **classes** or **arrow functions**.
 
 ### API
 
@@ -63,7 +63,7 @@ Current build targets modern browsers that supports ESModules (see the [browserl
 function parseDTO<T extends object>(Cls: DTOConstructor, raw: T | object): T;
 ```
 
-Transforms provided `raw` value with rules defined in the provided `Cls` constructor.
+Transforms provided `raw` value with the rules defined in the `Cls` constructor.
 
 <details>
 <summary>Usage</summary>
@@ -169,7 +169,7 @@ Accepts:
 - `clampMin` - lower bound of the number to clamp
 - `clampMax` - upper bound of the number to clamp
 - `round` - round method to use to adjust a value
-- `defaultValue` - Default value to use when input value is `null` or `undefined`
+- `defaultValue` - default value to use when input value is `null` or `undefined`
 
 <details>
 <summary>Usage</summary>
@@ -391,7 +391,7 @@ Annotates property as a `Object` with another DTO type.
 
 Accepts:
 
-- `nullable` - converts value to `null` when it's `null` or `undefined`, otherwise converts DTO with an empty object
+- `nullable` - converts value to `null` when it's `null` or `undefined`, otherwise converts into DTO with an empty object
 
 <details>
 <summary>Usage</summary>
